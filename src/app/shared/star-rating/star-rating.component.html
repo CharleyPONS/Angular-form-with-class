@@ -1,0 +1,12 @@
+<ng-container *ngFor="let star of starArray; index as index">
+  <span (click)="setRatingValue(index + 1)" class="star-selector"
+    ><img
+      [src]="
+        index >= value || !value
+          ? '/assets/images/star_empty.png'
+          : '/assets/images/star.png'
+      "
+      [ngClass]="{ 'is-disabled': disabled }"
+  /></span>
+</ng-container>
+<button type="button" (click)="setRatingValue(null)">Clear</button>

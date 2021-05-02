@@ -1,0 +1,18 @@
+<div [formGroup]="form">
+  <h2>Film</h2>
+  <app-movie-general [form]="form.general"></app-movie-general>
+
+  <div
+    class="form-group inline-group"
+    [class.invalid]="form.get('rating').invalid"
+  >
+    <label>Rating</label>
+    <app-star-rating formControlName="rating"></app-star-rating>
+    <span class="input-error">&#10060;</span>
+  </div>
+
+  <div>
+    <h2>Casting</h2>
+    <app-movie-casting [form]="form.actors"></app-movie-casting>
+  </div>
+</div>

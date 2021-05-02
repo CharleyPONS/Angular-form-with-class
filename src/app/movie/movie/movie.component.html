@@ -1,0 +1,20 @@
+<h1>Détail du film</h1>
+
+<div class="panels-container">
+  <div class="left-panel">
+    <!-- <form> -->
+    <app-movie-description [form]="form"></app-movie-description>
+    <div class="buttons-row">
+      <button
+        type="submit"
+        (click)="submitForm($event)"
+        [disabled]="form.invalid"
+      >
+        Valider
+      </button>
+      <button type="button" (click)="form.reset()">Effacer</button>
+    </div>
+    <!-- </form> -->
+  </div>
+  <div class="right-panel">{{ data | json }}</div>
+</div>

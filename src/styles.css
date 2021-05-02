@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Arial;
+  padding: 1rem;
+}
+
+.examples-links-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.panels-container {
+  display: flex;
+}
+
+.right-panel {
+  padding: 2rem;
+  white-space: pre;
+  margin-left: 2rem;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+.input-error {
+  margin: 0 0.5rem;
+  font-size: 0.5rem;
+  visibility: hidden;
+}
+
+.form-group {
+  width: 360px;
+  margin: 1rem 0rem;
+}
+.form-group.small {
+  width: 200px;
+}
+
+.form-group.inline-group {
+  display: flex;
+  align-items: center;
+}
+
+.invalid .input-error {
+  visibility: visible;
+}
+
+label {
+  flex-shrink: 0;
+}
+
+textarea,
+input[type="number"],
+input[type="text"] {
+  flex-grow: 1;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.list-item-label {
+  margin-right: 1rem;
+}
+
+.list-item button {
+  padding: 0.1rem 0.25rem;
+  margin: 0 0.1rem;
+  font-size: 0.5rem;
+}
+
+.buttons-row {
+  display: flex;
+}
+
+.buttons-row button {
+  margin: 1rem 0.1rem;
+}

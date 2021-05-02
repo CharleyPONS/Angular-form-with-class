@@ -1,0 +1,9 @@
+<fieldset>
+  <ng-container *ngFor="let casting of form.controls; index as index">
+    <app-casting-human
+      [form]="casting"
+      (deleteItem)="onDeleteCasting(index)"
+    ></app-casting-human>
+  </ng-container>
+  <button (click)="addCasting()">Ajouter un.e membre</button>
+</fieldset>

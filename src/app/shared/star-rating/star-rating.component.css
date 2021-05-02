@@ -1,0 +1,6 @@
+.star-selector {
+  cursor: pointer;
+}
+.is-disabled {
+  filter: grayscale(1);
+}
